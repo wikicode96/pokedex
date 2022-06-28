@@ -1,0 +1,239 @@
+:root{
+    --black: black;
+    --blue: rgb(0, 120, 255);
+    --blue_light: rgb(140, 210, 255); /* Light Blue */
+    --gray: rgb(80, 80, 80);
+    --green: rgb(60, 230, 30);
+    --raisin_black: rgb(36, 33, 36);
+    --red: rgb(250, 30, 30);
+    --red_dark: rgb(210, 30, 30); /* Dark Red */
+    --white: white;
+    --yellow: rgb(255, 230, 0);
+}
+html{
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    font-family: 'VT323', monospace;
+    background-color: var(--raisin_black);
+}
+.left{
+    height: 50rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: 26rem 4rem;
+    grid-template-rows: 10rem 28rem 12rem;
+    background-color: var(--red);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.right{
+    height: 50rem;
+    width: 30rem;
+    /*background-color: var(--red);*/
+}
+
+/* Left */
+.top{
+    height: 10rem;
+    width: 30rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.middle{
+    height: 28rem;
+    width: 26rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.bottom{
+    height: 12rem;
+    width: 26rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 2rem 6rem 6rem 4rem;
+    grid-template-rows: 1rem 3rem 2rem;
+}
+.hinge{
+    height: 40rem;
+    width: 4rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    box-shadow: inset 2px -2px 0 0 var(--black);
+}
+
+/* Top */
+.light_blue{
+    height: 10rem;
+    width: 10rem;
+}
+.lights{
+    height: 10rem;
+    width: 10rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+.white_circle{
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.blue_circle{
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--blue);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.light_1{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--red_dark);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.light_2{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.light_3{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+
+/* Display */
+.frame{
+    height: 26rem;
+    width: 22rem;
+    display: grid;
+    grid-template-columns: 2rem 18rem 2rem;
+    grid-template-rows: 2rem 18rem 2rem 4rem;
+    margin: 2rem auto 0rem auto;
+    border-radius: 0.5rem 0.5rem 0.5rem 2rem;
+    background-color: var(--white);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.display{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--gray);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+#pokemon_img{
+    height: 18rem;
+    width: 18rem;
+}
+.bottom_frame{
+    height: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 2rem 15rem;   
+}
+.light_red{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    grid-column-start: 2;
+    background-color: var(--red);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.right_lines{
+    height: 3rem;
+    width: 3rem;
+    grid-column-start: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.line_black{
+    height: 0.5rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--black);
+}
+
+/* Bottom */
+.power{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: var(--blue_light);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.button_1{
+    height: 0.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: var(--red_dark);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.button_2{
+    height: 0.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: var(--blue_light);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.display_names{
+    height: 3rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    background-color: var(--green);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.pokemon_name{
+    margin: 0.5rem;
+}
+.button_direction{
+    height: 6rem;
+    width: 6rem;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    display: grid;
+    grid-template-columns: 2rem;
+    grid-template-rows: 2rem;
+}
+.cross{
+    height: 6rem;
+}
+
+/* hinge */
+
+@media (min-width: 768px) /*Laptop and PC*/ {
+    
+}
+@media (min-width: 426px) and (max-width: 768px) /*Tablet*/ {
+    
+}
