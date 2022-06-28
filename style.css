@@ -14,11 +14,16 @@ html{
     /* 1rem = 10px */
     font-size: 62.5%;
     font-family: 'VT323', monospace;
-    background-color: var(--raisin_black);
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .left{
     height: 50rem;
     width: 30rem;
+    margin: auto;
     display: grid;
     grid-template-columns: 26rem 4rem;
     grid-template-rows: 10rem 28rem 12rem;
@@ -28,10 +33,11 @@ html{
 .right{
     height: 50rem;
     width: 30rem;
-    /*background-color: var(--red);*/
+    margin: auto;
+    background-color: var(--red);
 }
 
-/* Left */
+/* LEFT */
 .top{
     height: 10rem;
     width: 30rem;
@@ -230,6 +236,9 @@ html{
 }
 
 /* hinge */
+
+/* RIGHT */
+
 
 @media (min-width: 768px) /*Laptop and PC*/ {
     

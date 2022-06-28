@@ -1,6 +1,7 @@
 /* Input #TO DO */ 
 
-consultAPI(301)
+consultAPI(384)
+    
 
 /* Connect to API */
 async function consultAPI(pokeId){
