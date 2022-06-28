@@ -18,7 +18,6 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Resize the background image to cover the entire container */
-  
 }
 .left{
     height: 50rem;
@@ -239,10 +238,19 @@ html{
 
 /* RIGHT */
 
-
-@media (min-width: 768px) /*Laptop and PC*/ {
-    
-}
-@media (min-width: 426px) and (max-width: 768px) /*Tablet*/ {
-    
+@media (min-width: 600px) {
+    html, body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        margin: 0;
+    }
+    .right{
+        margin: 0;
+    }
 }
