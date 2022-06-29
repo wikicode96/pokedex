@@ -4,6 +4,7 @@
     --blue_light: rgb(140, 210, 255); /* Light Blue */
     --gray: rgb(80, 80, 80);
     --green: rgb(60, 230, 30);
+    --orange: rgb(255, 165, 30);
     --raisin_black: rgb(36, 33, 36);
     --red: rgb(250, 30, 30);
     --red_dark: rgb(210, 30, 30); /* Dark Red */
@@ -27,13 +28,11 @@ html{
     grid-template-columns: 26rem 4rem;
     grid-template-rows: 10rem 28rem 12rem;
     background-color: var(--red);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .right{
     height: 50rem;
     width: 30rem;
     margin: auto;
-    background-color: var(--red);
 }
 
 /* LEFT */
@@ -43,7 +42,6 @@ html{
     grid-column-start: 1;
     grid-column-end: 3;
     display: flex;
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .middle{
     height: 28rem;
@@ -89,7 +87,6 @@ html{
     position: absolute;
     border-radius: 50%;
     background-color: var(--white);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .blue_circle{
     height: 6rem;
@@ -98,28 +95,24 @@ html{
     position: absolute;
     border-radius: 50%;
     background-color: var(--blue);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .light_1{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     background-color: var(--red_dark);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .light_2{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     background-color: var(--yellow);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .light_3{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     background-color: var(--green);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 
 /* Display */
@@ -132,7 +125,6 @@ html{
     margin: 2rem auto 0rem auto;
     border-radius: 0.5rem 0.5rem 0.5rem 2rem;
     background-color: var(--white);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .display{
     height: 18rem;
@@ -143,7 +135,6 @@ html{
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: var(--gray);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 #pokemon_img{
     height: 18rem;
@@ -164,7 +155,6 @@ html{
     border-radius: 50%;
     grid-column-start: 2;
     background-color: var(--red);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .right_lines{
     height: 3rem;
@@ -189,7 +179,6 @@ html{
     grid-column-start: 2;
     grid-row-start: 2;
     background-color: var(--blue_light);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .button_1{
     height: 0.5rem;
@@ -198,7 +187,6 @@ html{
     grid-column-start: 3;
     grid-row-start: 2;
     background-color: var(--red_dark);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .button_2{
     height: 0.5rem;
@@ -207,7 +195,6 @@ html{
     grid-column-start: 4;
     grid-row-start: 2;
     background-color: var(--blue_light);
-    box-shadow: inset 0 0 0 2px var(--black);
 }
 .display_names{
     height: 3rem;
@@ -216,10 +203,6 @@ html{
     grid-column-start: 2;
     grid-row-start: 4;
     background-color: var(--green);
-    box-shadow: inset 0 0 0 2px var(--black);
-}
-.pokemon_name{
-    margin: 0.5rem;
 }
 .button_direction{
     height: 6rem;
@@ -235,8 +218,132 @@ html{
 }
 
 /* hinge */
+.box_1{
+    height: 4rem;
+    width: 4rem;
+    box-shadow: inset 0 -2px 0  var(--black);
+}
+.box_2{
+    height: 32rem;
+    width: 4rem;
+    box-shadow: inset 0 -2px 0  var(--black);
+}
+.box_3{
+    height: 2rem;
+    width: 4rem;
+    box-shadow: inset 0 -2px 0  var(--black);
+}
 
 /* RIGHT */
+.cover{
+    height: 40rem;
+    width: 30rem;
+    display: grid;
+    grid-template-rows: 2rem 17rem;
+    background-color: var(--red);
+}
+.display_r{
+    height: 16rem;
+    width: 26rem;
+    border-radius: 1rem;
+    grid-row-start: 2;
+    margin: 0 auto;
+    background-color: var(--gray);
+}
+.bottom_r{
+    height: 18rem;
+    width: 25rem;
+    grid-row-start: 3;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 12rem 10rem;
+    grid-template-rows: 7rem 2rem 2rem 4rem;
+}
+.blue_buttons{
+    height: 6rem;
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.white_buttons{
+    height: 3rem;
+    width: 6rem;
+    grid-row-start: 3;
+    display: flex;
+}
+.black_buttons{
+    height: 1rem;
+    width: 13rem;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.orange_light{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    background-color: var(--orange);
+}
+.bottom_buttons{
+    height: 3rem;
+    width: 25rem;
+    grid-row-start: 5;
+    display: flex;
+    justify-content: space-between;
+}
+.button_number{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: var(--blue_light);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.white_button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    box-shadow: inset 0 0 0 2px var(--black);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.black_button{
+    height: 1rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    background-color: var(--black);
+}
+.gray_button{
+    height: 3rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--gray);
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+
+/* Groups */
+.border{
+    box-shadow: inset 0 0 0 2px var(--black);
+}
+.text{
+    margin: 0.5rem;
+}
+
+/* SVG */
+.power_svg{
+    height: 3rem;
+    position: absolute;
+    margin: 0.5rem;
+}
+.white_svg{
+    height: 2rem;
+}
 
 @media (min-width: 600px) {
     html, body{
@@ -252,5 +359,8 @@ html{
     }
     .right{
         margin: 0;
+    }
+    .cover{
+        margin-top: 10rem;
     }
 }
