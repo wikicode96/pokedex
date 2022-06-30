@@ -30,7 +30,7 @@ html{
     background-color: var(--red);
 }
 .right{
-    height: 50rem;
+    height: 40rem;
     width: 30rem;
     margin: auto;
 }
@@ -358,6 +358,7 @@ html{
         margin: 0;
     }
     .right{
+        height: 50rem;
         margin: 0;
     }
     .cover{
