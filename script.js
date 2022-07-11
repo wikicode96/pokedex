@@ -1,3 +1,5 @@
+consultAPI(150)
+
 /* Turn Off (Done)*/
 function turnedOff(){
     document.getElementById('pokemon_name').innerHTML = '';

@@ -88,7 +88,7 @@ html{
     border-radius: 50%;
     background-color: var(--white);
 }
-.blue_circle{
+#blue_circle{
     height: 6rem;
     width: 6rem;
     margin: 1rem;
@@ -96,19 +96,19 @@ html{
     border-radius: 50%;
     background-color: var(--blue);
 }
-.light_1{
+#light_1{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     background-color: var(--red_dark);
 }
-.light_2{
+#light_2{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
     background-color: var(--yellow);
 }
-.light_3{
+#light_3{
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -343,6 +343,18 @@ html{
 }
 .white_svg{
     height: 2rem;
+}
+
+/* :active */
+.power:active{
+    background-color: var(--blue);
+}
+.white_button:active{
+    background-color: var(--gray);
+}
+.gray_button:active{
+    color: var(--black);
+    background-color: var(--white);
 }
 
 @media (min-width: 600px) {
