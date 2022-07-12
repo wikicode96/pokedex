@@ -250,6 +250,11 @@ html{
     margin: 0 auto;
     background-color: var(--gray);
 }
+.stats{
+    margin: 1rem 1rem;
+    color: var(--white);
+}
+
 .bottom_r{
     height: 18rem;
     width: 25rem;
